@@ -4,7 +4,17 @@
 # with clear comments and imports and more functionality so it does not get  repetitive for the programmer
 # ==============================================================================
 
-directory = r'D:\your-directory\generated.py'
+directory = input("Enter The Directory of the file: ")
+file_name = input("Enter the name of the file: ") + ".py"
+
+file_name = f"\{file_name}"
+
+raw_directory = r'{}'.format(directory)
+
+raw_file_name = r'{}'.format(file_name)
+
+Full_directory = raw_directory + raw_file_name
+
 write1 = ('import sys\nfrom PySide2 import QtCore, QtGui, QtWidgets\nfrom PySide2.QtCore import QCoreApplication, QPropertyAnimation, QDate, QDateTime, QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent\nfrom PySide2.QtGui import QBrush, QColor, QConicalGradient, QCursor, QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient\nfrom PySide2.QtWidgets import *'
 
           '\n\n# ==> FILE-IMPORTS'
@@ -51,6 +61,5 @@ write1 = ('import sys\nfrom PySide2 import QtCore, QtGui, QtWidgets\nfrom PySide
           '\n\n\n\n\n\n# ===> SHOW THE WINDOW'
           '\napp = QApplication(sys.argv)\nwindow = MainWindow()\nwindow.show()\nsys.exit(app.exec_())')
 
-# print(write1)
-with open(directory, 'w') as f:
+with open(Full_directory, 'w') as f:
     f.write(write1)
