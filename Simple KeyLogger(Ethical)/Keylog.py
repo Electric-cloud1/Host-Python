@@ -1,7 +1,7 @@
 
 # ==============================================================================
 # Simple Python Keylogger for Windows
-# Created by: ThunderZ
+# Put together By: ThunderZ
 # Github Link: https://github.com/ThunderZ-Coder-A
 # ==============================================================================
 '''
