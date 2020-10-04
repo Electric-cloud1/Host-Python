@@ -3,6 +3,9 @@
 # Program that generates an beautifully formatted file to get started with your Pyside2 Project
 # with clear comments and imports and more functionality so it does not get  repetitive for the programmer
 # ==============================================================================
+# Created by: ThunderZ
+# Github Link: https://github.com/ThunderZ-Coder-A
+# ==============================================================================
 
 directory = input("Enter The Directory of the file: ")
 file_name = input("Enter the name of the file: ") + ".py"
